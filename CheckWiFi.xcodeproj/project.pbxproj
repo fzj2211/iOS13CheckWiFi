@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,7 @@
 		BBE789B822E20BB80036B0AB /* CheckWiFiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckWiFiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE789BC22E20BB80036B0AB /* CheckWiFiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckWiFiUITests.m; sourceTree = "<group>"; };
 		BBE789BE22E20BB80036B0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE789CD22E20DA80036B0AB /* CheckWiFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckWiFi.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				BBE789B022E20BB80036B0AB /* CheckWiFiTests */,
 				BBE789BB22E20BB80036B0AB /* CheckWiFiUITests */,
 				BBE7899622E20BB70036B0AB /* Products */,
+				BBE789CA22E20DA80036B0AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +103,7 @@
 		BBE7899722E20BB70036B0AB /* CheckWiFi */ = {
 			isa = PBXGroup;
 			children = (
+				BBE789CD22E20DA80036B0AB /* CheckWiFi.entitlements */,
 				BBE7899822E20BB70036B0AB /* AppDelegate.h */,
 				BBE7899922E20BB70036B0AB /* AppDelegate.m */,
 				BBE7899B22E20BB70036B0AB /* ViewController.h */,
@@ -130,6 +133,13 @@
 				BBE789BE22E20BB80036B0AB /* Info.plist */,
 			);
 			path = CheckWiFiUITests;
+			sourceTree = "<group>";
+		};
+		BBE789CA22E20DA80036B0AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +209,11 @@
 				TargetAttributes = {
 					BBE7899422E20BB70036B0AB = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					BBE789AC22E20BB80036B0AB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -211,7 +226,7 @@
 				};
 			};
 			buildConfigurationList = BBE7899022E20BB70036B0AB /* Build configuration list for PBXProject "CheckWiFi" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -435,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CheckWiFi/CheckWiFi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLGK7523N6;
 				INFOPLIST_FILE = CheckWiFi/Info.plist;
@@ -452,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CheckWiFi/CheckWiFi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLGK7523N6;
 				INFOPLIST_FILE = CheckWiFi/Info.plist;
